@@ -71,7 +71,7 @@
             <classpath refid="ToDoList.classpath"/>
         </junit>
     </target>
-    <target name="AllTests">
+    <target name="test.AllTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
