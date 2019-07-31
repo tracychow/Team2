@@ -15,7 +15,7 @@
         <pathelement location="lib/junit-4.11.jar"/>
         <pathelement location="lib/hamcrest-core-1.3.jar"/>
     </path>
-    <path id="StackAnnotationProject.classpath">
+    <path id="ToDoList.classpath">
         <pathelement location="bin"/>
         <path refid="JUnit 4.libraryclasspath"/>
     </path>
@@ -42,11 +42,11 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="StackAnnotationProject.classpath"/>
+            <classpath refid="ToDoList.classpath"/>
         </javac>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
             <src path="test"/>
-            <classpath refid="StackAnnotationProject.classpath"/>
+            <classpath refid="ToDoList.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
@@ -63,12 +63,12 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="MyStringStackTest">
+    <target name="ToDoListTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="test.MyStringStackTest" todir="${junit.output.dir}"/>
-            <classpath refid="StackAnnotationProject.classpath"/>
+            <classpath refid="ToDoList.classpath"/>
         </junit>
     </target>
     <target name="AllTests">
@@ -76,7 +76,7 @@
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="test.AllTests" todir="${junit.output.dir}"/>
-            <classpath refid="StackAnnotationProject.classpath"/>
+            <classpath refid="ToDoList.classpath"/>
         </junit>
     </target>
     <target name="StackAnnotationProject">
@@ -84,8 +84,8 @@
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="test.AllTests" todir="${junit.output.dir}"/>
-            <test name="test.MyStringStackTest" todir="${junit.output.dir}"/>
-            <classpath refid="StackAnnotationProject.classpath"/>
+            <test name="test.ToDoListTest" todir="${junit.output.dir}"/>
+            <classpath refid="ToDoList.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
