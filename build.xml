@@ -4,27 +4,30 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="TodoList">
+<project basedir="." default="build" name="ToDoList">
 	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="../../eclipse" />
 	<property name="junit.output.dir" value="junit" />
 	<property name="debuglevel" value="source,lines,vars" />
-	<property name="target" value="1.8" />
-	<property name="source" value="1.8" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
 	<path id="JUnit 4.libraryclasspath">
-		<pathelement location="lib/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="lib/junit.jar" />
 		<pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+	</path>
+	<path id="ToDoList.classpath">
+		<pathelement location="bin" />
+		<path refid="JUnit 4.libraryclasspath" />
 	</path>
 	<target name="init">
 		<mkdir dir="bin" />
 		<copy includeemptydirs="false" todir="bin">
 			<fileset dir="src">
-				<exclude name="**/*.launch" />
 				<exclude name="**/*.java" />
 			</fileset>
 		</copy>
 		<copy includeemptydirs="false" todir="bin">
 			<fileset dir="test">
-				<exclude name="**/*.launch" />
 				<exclude name="**/*.java" />
 			</fileset>
 		</copy>
@@ -33,14 +36,17 @@
 		<delete dir="bin" />
 	</target>
 	<target depends="clean" name="cleanall" />
-	<target depends="build-subprojects,build-project" name="build" />
+	<target depends="build-subprojects,build-project,AllTests" name="build" />
 	<target name="build-subprojects" />
 	<target depends="init" name="build-project">
 		<echo message="${ant.project.name}: ${ant.file}" />
-		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
 			<src path="src" />
+			<classpath refid="ToDoList.classpath" />
+		</javac>
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
 			<src path="test" />
-			<classpath refid="TodoList.classpath" />
+			<classpath refid="ToDoList.classpath" />
 		</javac>
 	</target>
 	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects" />
