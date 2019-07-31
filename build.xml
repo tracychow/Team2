@@ -10,8 +10,8 @@
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <path id="JUnit 4.libraryclasspath">
-        <pathelement location="../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+        <pathelement location="lib/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
     </path>
     <path id="TodoList.classpath">
         <pathelement location="bin"/>
@@ -68,22 +68,22 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="AllTests (2)">
+    <target name="AllTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="AllTests" todir="${junit.output.dir}"/>
+            <test name="test.AllTests" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="run.AllTests (2).classpath"/>
+            <classpath refid="run.AllTests.classpath"/>
         </junit>
     </target>
-    <target name="ToDoListTest (1)">
+    <target name="ToDoListTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="ToDoListTest" todir="${junit.output.dir}"/>
+            <test name="test.ToDoListTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="run.ToDoListTest (1).classpath"/>
+            <classpath refid="run.ToDoListTest.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
