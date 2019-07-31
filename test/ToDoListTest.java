@@ -108,4 +108,19 @@ public class ToDoListTest {
 		Collection<Task> tasks = todoList.getTasksByPriority(1);
 		assertEquals(2, tasks.size());
 	}
+	@Test
+	public void testEditTaskDescription() {
+		String desc1 = "desc 1";
+		todoList.addTask(task1);
+		
+		String desc1_get = todoList.getTask(desc1).getDescription();
+		assertEquals(desc1, desc1_get);
+		
+		String desc4 = "desc 4";
+		todoList.editTaskDescription(desc1, desc4);
+		String desc4_get = todoList.getTask(desc1).getDescription();
+		assertNotEquals(desc1_get, desc4_get);
+		assertEquals(desc4, desc4_get);
+		
+	}
 }

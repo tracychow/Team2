@@ -65,4 +65,16 @@ public class ToDoList {
 		}
 		return requiredTasks;
 	}
+	public void editTaskDescription(String description, String description_new) {
+
+	Collection<Task> allTasks = new ArrayList<Task> ();
+	allTasks = getAllTasks();
+	for (Task task: allTasks) {
+		if (task.getDescription() == description) {
+			task.setDescription(description_new);
+			tasks.put(description, task);
+		}
+		
+	}
+}
 }
