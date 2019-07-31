@@ -70,6 +70,17 @@ public class ToDoListTest {
 		task1.setComplete(true);
 		task1.resetStatus();
 		assertFalse(task1.isComplete());
-	
+	}
+
+	@Test
+	public void testGetUncompletedTasks() {
+		task1.setComplete(true);
+		todoList.addTask(task1);
+		todoList.addTask(task2);
+		todoList.addTask(task3);
+		
+		Collection<Task> tasks = todoList.getUncompletedTasks();
+		assertEquals(2, tasks.size());
+
 	}
 }
