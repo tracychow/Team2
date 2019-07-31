@@ -95,4 +95,17 @@ public class ToDoListTest {
 		assertEquals(3, task3.getPriority());
 	
 	}
+	
+	@Test
+	public void testGetTasksByPriority() {
+		task1.setPriority(1);
+		task2.setPriority(1);
+		task3.setPriority(3);
+		todoList.addTask(task1);
+		todoList.addTask(task2);
+		todoList.addTask(task3);
+		
+		Collection<Task> tasks = todoList.getTasksByPriority(1);
+		assertEquals(2, tasks.size());
+	}
 }

@@ -52,4 +52,17 @@ public class ToDoList {
 		}
 		return uncompletedTasks;
 	}
+	public Collection<Task> getTasksByPriority(int priority){
+		Collection<Task> requiredTasks = new ArrayList<Task> ();
+		Collection<Task> allTasks = new ArrayList<Task> ();
+		allTasks = getAllTasks();
+		for (Task task: allTasks)
+		{
+			if (task.getPriority() == priority)
+			{
+				requiredTasks.add(task);
+			}
+		}
+		return requiredTasks;
+	}
 }
