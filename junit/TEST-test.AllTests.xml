@@ -1,0 +1,163 @@
+
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<testsuite errors="0" failures="0" hostname="EC2AMAZ-NI675NF" name="test.AllTests" skipped="0" tests="6" time="0.109" timestamp="2019-07-31T01:48:25">
+<properties>
+<property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+<property name="ant.library.dir" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib"/>
+<property name="env.NUMBER_OF_PROCESSORS" value="4"/>
+<property name="env.USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
+<property name="java.specification.version" value="12"/>
+<property name="env.WINSW_SERVICE_ID" value="Jenkins"/>
+<property name="env.BUILD_TAG" value="jenkins-Ref_JAVA-19"/>
+<property name="ant.project.name" value="StackAnnotationProject"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="env.EXECUTOR_NUMBER" value="1"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="env.HUDSON_URL" value="http://54.169.162.141/"/>
+<property name="debuglevel" value="source,lines,vars"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="env.CommonProgramW6432" value="C:\Program Files\Common Files"/>
+<property name="env.JENKINS_HOME" value="C:\Program Files (x86)\Jenkins"/>
+<property name="env.OS" value="Windows_NT"/>
+<property name="env.JOB_DISPLAY_URL" value="http://54.169.162.141/job/Ref_JAVA/display/redirect"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin"/>
+<property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\junit\TEST-test.AllTests.xml crashfile=C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\junitvmwatcher10271559186846751478.properties propsfile=C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\junit11727716933473537018.properties"/>
+<property name="jdk.debug" value="release"/>
+<property name="env.ComSpec" value="C:\Windows\system32\cmd.exe"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="env.ANT_CMD_LINE_ARGS" value=" build"/>
+<property name="java.version.date" value="2019-04-16"/>
+<property name="java.home" value="C:\Program Files\Java\jdk-12.0.1"/>
+<property name="env.ProgramFiles" value="C:\Program Files"/>
+<property name="file.separator" value="\"/>
+<property name="basedir" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA"/>
+<property name="java.vm.compressedOopsMode" value="32-bit"/>
+<property name="line.separator" value="
+ "/>
+<property name="env.PROMPT" value="$P$G"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="env._JAVACMD" value="java.exe"/>
+<property name="env.JENKINS_SERVER_COOKIE" value="2e4968aec3d414f3"/>
+<property name="env.LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
+<property name="env.PROCESSOR_REVISION" value="5503"/>
+<property name="env.SERVICE_ID" value="Jenkins"/>
+<property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\AWS Tools\PowerShell\"/>
+<property name="user.script" value=""/>
+<property name="env.GIT_URL" value="https://github.com/ISS-EPAT/StackAnnotation.git"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 85 Stepping 3, GenuineIntel"/>
+<property name="java.runtime.version" value="12.0.1+12"/>
+<property name="user.name" value="EC2AMAZ-NI675NF$"/>
+<property name="env.ProgramW6432" value="C:\Program Files"/>
+<property name="env.GIT_BRANCH" value="origin/master"/>
+<property name="env.CommonProgramFiles" value="C:\Program Files\Common Files"/>
+<property name="env.BUILD_URL" value="http://54.169.162.141/job/Ref_JAVA/19/"/>
+<property name="env.PUBLIC" value="C:\Users\Public"/>
+<property name="file.encoding" value="Cp1252"/>
+<property name="env.JOB_URL" value="http://54.169.162.141/job/Ref_JAVA/"/>
+<property name="env.COMPUTERNAME" value="EC2AMAZ-NI675NF"/>
+<property name="env.SystemDrive" value="C:"/>
+<property name="env.APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
+<property name="env.ProgramData" value="C:\ProgramData"/>
+<property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+<property name="env.NODE_LABELS" value="master"/>
+<property name="java.version" value="12.0.1"/>
+<property name="env.WORKSPACE" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA"/>
+<property name="env.Path" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\dotnet\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\.dotnet\tools"/>
+<property name="env.PROCESSOR_LEVEL" value="6"/>
+<property name="env.TMP" value="C:\Windows\TEMP"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="ant.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation"/>
+<property name="env.BUILD_ID" value="19"/>
+<property name="env.RUN_CHANGES_DISPLAY_URL" value="http://54.169.162.141/job/Ref_JAVA/19/display/redirect?page=changes"/>
+<property name="env.JOB_NAME" value="Ref_JAVA"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="junit.output.dir" value="junit"/>
+<property name="ant.version" value="Apache Ant(TM) version 1.10.6 compiled on May 2 2019"/>
+<property name="java.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Amazon\cfn-bootstrap\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\dotnet\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\.dotnet\tools;."/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="env.HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="env.HUDSON_SERVER_COOKIE" value="2e4968aec3d414f3"/>
+<property name="env.BUILD_NUMBER" value="19"/>
+<property name="sun.desktop" value="windows"/>
+<property name="env.GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="9a761fcf031028d4c2d62da98503a7f328f88aa3"/>
+<property name="ant.file.type" value="file"/>
+<property name="java.class.path" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\bin;C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\lib\junit-4.11.jar;C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib\ant-launcher.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib\ant.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib\ant-junit.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib\ant-junit4.jar"/>
+<property name="source" value="1.7"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="env.PROCESSOR_ARCHITECTURE" value="AMD64"/>
+<property name="user.variant" value=""/>
+<property name="env.SystemRoot" value="C:\Windows"/>
+<property name="os.name" value="Windows Server 2016"/>
+<property name="java.vm.specification.version" value="12"/>
+<property name="env.RUN_DISPLAY_URL" value="http://54.169.162.141/job/Ref_JAVA/19/display/redirect"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="user.country" value="US"/>
+<property name="env.USERDOMAIN" value="WORKGROUP"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+<property name="user.language" value="en"/>
+<property name="env.ALLUSERSPROFILE" value="C:\ProgramData"/>
+<property name="ant.java.version" value="12"/>
+<property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+<property name="env.HUDSON_COOKIE" value="f7945a7f-c6bc-4b6d-a144-fb18147adfc8"/>
+<property name="env.GIT_PREVIOUS_COMMIT" value="9a761fcf031028d4c2d62da98503a7f328f88aa3"/>
+<property name="env.ANT_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation"/>
+<property name="env.JENKINS_URL" value="http://54.169.162.141/"/>
+<property name="env.windir" value="C:\Windows"/>
+<property name="ant.file" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\build.xml"/>
+<property name="env.GIT_COMMIT" value="9a761fcf031028d4c2d62da98503a7f328f88aa3"/>
+<property name="env.=C:" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA"/>
+<property name="path.separator" value=";"/>
+<property name="ant.file.StackAnnotationProject" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA\build.xml"/>
+<property name="os.version" value="10.0"/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+<property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+<property name="ant.project.invoked-targets" value="build"/>
+<property name="env._USE_CLASSPATH" value="no"/>
+<property name="env.NODE_NAME" value="master"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="env.BUILD_DISPLAY_NAME" value="#19"/>
+<property name="ECLIPSE_HOME" value="../../eclipse"/>
+<property name="ant.core.lib" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_Installation\lib\ant.jar"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="user.dir" value="C:\Program Files (x86)\Jenkins\workspace\Ref_JAVA"/>
+<property name="env.USERNAME" value="EC2AMAZ-NI675NF$"/>
+<property name="os.arch" value="amd64"/>
+<property name="target" value="1.7"/>
+<property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.version" value="12.0.1+12"/>
+<property name="env.BASE" value="C:\Program Files (x86)\Jenkins"/>
+<property name="ant.file.type.StackAnnotationProject" value="file"/>
+<property name="env.TEMP" value="C:\Windows\TEMP"/>
+<property name="env.WINSW_EXECUTABLE" value="C:\Program Files (x86)\Jenkins\jenkins.exe"/>
+<property name="java.class.version" value="56.0"/>
+<property name="env.JOB_BASE_NAME" value="Ref_JAVA"/>
+<property name="ant.project.default-target" value="build"/>
+</properties>
+<properties>...</properties>
+<testcase classname="test.AllTests" name="testStackNull" time="0.0"/>
+<system-out>
+<![CDATA[
+Test for default package
+ hello
+ hello
+ hello
+ hello
+ hello
+ hello
+]]>
+<![CDATA[...]]>
+</system-out>
+<system-out>...</system-out>
+<system-err>
+<![CDATA[ ]]>
+</system-err>
+<system-err>...</system-err>
+</testsuite>
+<testsuite errors="0" failures="0" hostname="EC2AMAZ-NI675NF" name="test.AllTests" skipped="0" tests="6" time="0.109" timestamp="2019-07-31T01:48:25">...</testsuite>
