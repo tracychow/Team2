@@ -1,9 +1,13 @@
 
 public class Task {
+	public static final int	LOW = 1;
+	public static final int MEDIUM = 2;
+	public static final int	HIGH = 3;	
+	
 	private String description = null;
 	private boolean isComplete = false;
-	
-	
+	private int priority = 1;
+		
 	public Task(String description) {
 		super();
 		this.description = description;
@@ -30,6 +34,11 @@ public class Task {
 	public void resetStatus() {
 		isComplete = false;
 	}
-	
+	public int getPriority() {
+		return priority;
+	}
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
 
 }
