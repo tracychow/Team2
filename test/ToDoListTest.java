@@ -65,4 +65,11 @@ public class ToDoListTest {
 		Collection<Task> tasks = todoList.getCompletedTasks();
 		assertEquals(2, tasks.size());
 	}
+	@Test
+	public void testResetStatusToInComplete() {
+		task1.setComplete(true);
+		task1.resetStatus();
+		assertFalse(task1.isComplete());
+	
+	}
 }

@@ -27,5 +27,9 @@ public class Task {
 	public void setComplete(boolean isComplete) {
 		this.isComplete = isComplete;
 	}
+	public void resetStatus() {
+		isComplete = false;
+	}
+	
 
 }
